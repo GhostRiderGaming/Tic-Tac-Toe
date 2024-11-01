@@ -78,5 +78,12 @@ const checkWinner = () => {
 newGameBtn.addEventListener("click", resetGame);
 resetBtn.addEventListener("click", resetGame);
 
+window.addEventListener('load', function() {
+    // Hide loading overlay and show content after a delay
+    setTimeout(function() {
+        document.getElementById('loadingOverlay').style.display = 'none';
+        document.getElementById('mainpage').style.display = 'block';
+    }, 2000); // 2 seconds delay
+});
 
 
